@@ -31,7 +31,7 @@ def get_result(word, grid)
     condition = word.upcase.chars.all? { |char| grid.count(char) >= word.upcase.chars.count(char) }
     return { score: get_score(word, grid), message: 'is a valid word. Well Done!' } if condition
 
-    return { score: 0, message: 'does not contain characters from the grid of letters!' }
+    return { score: 0, message: "does not contain characters from the grid of letters: #{grid.join(', ')}!" }
   end
   { score: 0, message: 'is not an English word!' }
 end
