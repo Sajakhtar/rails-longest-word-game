@@ -1,11 +1,12 @@
 <h1>Score</h1>
 
+<h3>Total Score: <%= @result[:total].to_i %></h3>
 
 <p>
   <strong><%= @attempt %></strong>
   <%= @result[:message] %>
   Your score is
-  <strong><%= @result[:score] %></strong>
+  <strong><%= @result[:score].to_i %></strong>
 </p>
 
 
