@@ -16,6 +16,8 @@ class GamesController < ApplicationController
   end
 end
 
+private
+
 def english_word?(word)
   url = "https://wagon-dictionary.herokuapp.com/#{word}"
   word_serialized = URI.open(url).read
