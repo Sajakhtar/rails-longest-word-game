@@ -27,5 +27,6 @@ class GamesTest < ApplicationSystemTestCase
   #   click_on "Play"
 
   #   assert_text "dad is not from the grid of letters:"
+  # assert_selector "p", text: "some text"
   # end
 end
